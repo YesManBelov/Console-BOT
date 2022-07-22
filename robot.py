@@ -54,7 +54,7 @@ def get_coord_list(com_string):
         if com == "F":
             # получаем последнюю координату
             last_coord = com_list[-1].copy()
-            # изменяем ее по формату, и записываем в конец (Так было без множителя)
+            # изменяем ее по формату, и записываем в конец
             last_coord[step_format[0]] += step_format[1]
             com_list.append(last_coord)
         else:
@@ -95,7 +95,7 @@ def print_map(coord_map):
 
     # Создаем массив пустой карты, исходя из размеров.
     # По "х" будет список столбцов, по "у" список строчек.
-    map_massive = [[' ' for x in range(max_x)] for _ in range(max_y)]
+    map_massive = [[' ' for _ in range(max_x)] for _ in range(max_y)]
 
     # Отразим зеркально значения y, для правильного отображения карты.
     # В данный момент, начало координат слева сверху, а должно быть слева снизу.
