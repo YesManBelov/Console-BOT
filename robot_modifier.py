@@ -1,9 +1,3 @@
-# Алгоритм интерпретатора команд для робота:
-#     - Проверить валидность заданной команды, чтобы не было лишних символов;
-#     - Создать карту координат перемещения робота;
-#     - Если присутствуют отрицательные координаты:
-#         то сдвинуть значения координат;
-#     - нарисовать карту.
 
 # Правила использования команд:
 # 1) Команда не должна содержать никаких символов, кроме
@@ -223,6 +217,7 @@ def execute(com_string):
 
 # ВХОДНЫЕ ДАННЫЕ
 com_1 = "FFFFFLFFFFFLFFFFFLFFFFFL"
+com_1 = "5FL5F!L5FL5F!L"
 com_2 = "LFFFFFRFFFRFFFRFFFFFFF"
 com_3 = "LFFFFFRFFFRFFFRFFFFFFFC"
 com_4 = "1fl02fl3fl4fl5fl6fl7fl8fl9fl10fl11fl"
@@ -230,7 +225,7 @@ com_5 = "!4FL12FL4FL4FL"
 com_6 = "4FL12FL4FL4FL2"
 com_7 = "4FL12FL4F5L4FL"
 com_8 = "4FL12FL4FL!FL"
-com_9 = "FRF2L6F"
+com_9 = "FRF2L3F"
 com_10 = "LLFF!RFLFF!RFLFF!RFLFF!RFLFF!RFLFF!RFLFF!RRFFF!LFRFF!LFRFF!LFRFF!LFRFF!LFRFF!RFLF!RFLF!RFL12FF!LFRF!LFRF!LFRFRF!L2FRF!L2FRF!L2FRF!L2FRF!L2FRF!R2FF!LFRFF!LFRFF!LFRFF!LFRFF!LFR15F" \
         "R2F!R12F" \
         "RR5FRFLFRFRF" \
