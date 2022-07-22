@@ -122,7 +122,7 @@ def align_coord_map(coord_map, negative_coord):
     return coord_map
 
 
-def not_negative_coord(coord_map):
+def get_negative_coord(coord_map):
     """Функция для определения отрицательных значений координат"""
     negative_coord = list(filter(lambda coord: coord[0] < 0 or coord[1] < 0, coord_map))
     if negative_coord:
@@ -183,10 +183,10 @@ def execute(com_string):
     coord_map, coord_invisible = get_coord_list(com_string)
 
     # Если в карте присутствуют отрицательные значения, то выровнять её
-    coord_map = not_negative_coord(coord_map)
+    coord_map = get_negative_coord(coord_map)
 
     # Идентично с invisible
-    coord_invisible = not_negative_coord(coord_invisible)
+    coord_invisible = get_negative_coord(coord_invisible)
 
     # Теперь рисуем саму карту
     printing_map = print_map(coord_map, coord_invisible)
