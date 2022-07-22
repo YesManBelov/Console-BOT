@@ -217,7 +217,6 @@ def execute(com_string):
 
 # ВХОДНЫЕ ДАННЫЕ
 com_1 = "FFFFFLFFFFFLFFFFFLFFFFFL"
-com_1 = "5FL5F!L5FL5F!L"
 com_2 = "LFFFFFRFFFRFFFRFFFFFFF"
 com_3 = "LFFFFFRFFFRFFFRFFFFFFFC"
 com_4 = "1fl02fl3fl4fl5fl6fl7fl8fl9fl10fl11fl"
