@@ -1,4 +1,3 @@
 .vscode
 README.md
-venv
-.gitignore
+venv/
