@@ -1,2 +1,4 @@
 .vscode
 README.md
+venv
+.gitignore
